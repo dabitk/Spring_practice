@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.kopo.view">
+	<logger name="com.kopo.view2">
 		<level value="info" />
 	</logger>
 	
