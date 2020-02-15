@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(() =>{
+			$("button.b1").click(function(){
+				$("img").animate({
+					width: '100px'
+				});
+			});
+			$("button.b2").click(function(){
+				$("img").animate({
+					width:'200px'
+				});
+			});
+			$("button.b3").click(function(){
+				$("img").animate({
+					width:'300px'
+				});
+			});
+		});
+	</script>
+	<style>
+		.css_pic{
+			height: 430px;
+			text-align: center;
+		}
+		.css_pic img{
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div class="css_pic">
+		버튼을 누르면 그림의 크기가 바뀝니다.</p>
+		<button class="b1">가로 100픽셀</button>
+		<button class="b2">가로 200픽셀</button>
+		<button class="b3">가로 300픽셀</button><br><br>
+		<img name="pic1" src="pic1.jpg"/>
+	</div>
+</body>
+</html>
